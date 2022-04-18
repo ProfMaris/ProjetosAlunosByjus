@@ -142,20 +142,22 @@ switch(expression) {
 <li>frequencia de quadros=>frameRate()</li>
 Especifica o número de quadros a serem exibidos a cada segundo. Por exemplo, a chamada de função frameRate(30) tentará atualizar 30 vezes por segundo
 </li>
-<h2> Operadores matematicos</h2>
-<li>resto de uma divisao => %</li>
+<h2> Operadores matemáticos</h2>
+<li>resto de uma divisão => %</li>
 <li>divisão => /</li>
+<li>multiplicação => /</li>
 <li>arrendondamento=> round</li>
 <li>aleatorio => random exemplo : random(1,60)</li>
 <li>numero aleatorio inteiro => exemplo: Math.round(random(1,6))</li>
 
-<h2> Operadores logicos </h2>
+<h2> Operadores lógicos </h2>
 <li>e  =>&&</li>
 <li>ou =>||</li>
 
 <h2> Funções de teclas</h2>
 <li>leitura da tecla =>
-keyIsDown() KeyDown()=: A função keyIsDown() em p5. js verifica o status atual da chave que a tecla está desativada, ou seja, pressionada . Ele pode ser usado se você tiver um objeto móvel e quiser que várias teclas possam afetar seu comportamento simultaneamente, como mover um sprite na diagonal
+keyIsDown() KeyDown()=</li>
+<div> A função keyIsDown() em p5. js verifica o status atual da chave que a tecla está desativada, ou seja, pressionada . Ele pode ser usado se você tiver um objeto móvel e quiser que várias teclas possam afetar seu comportamento simultaneamente, como mover um sprite na diagonal
 exemplo : if (keyIsDown(LEFT_ARROW)) {
                x -= 5;
             }
@@ -167,17 +169,29 @@ exemplo : if (keyIsDown(LEFT_ARROW)) {
                 trex.y = trex.y+10; // Faz o Trex incrementar + 10 posicoes na vertical.
               }
 
-</li> 
+
 <li>se passar o mouse sobre o elemento na tela => mousePressedOver(nomedoelemento)
 if(mousePressedOver(restart)) {
       reset();   
-}
+}</li>
 </li>
-KeyPressed()
+<li>KeyPressed()</li>
+<div>A função keyPressed() é chamada uma vez toda vez que uma tecla é pressionada. O keyCode da tecla que foi pressionada é armazenado na variável keyCode .
 
-KeyReleased()
+Para chaves não ASCII, use a variável keyCode. Você pode verificar se o keyCode é igual a BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE, SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW.
 
-Drag
+Para teclas ASCII, a tecla que foi pressionada é armazenada na variável key. No entanto, não faz distinção entre maiúsculas e minúsculas. Por esta razão, é recomendado usar keyTyped() para ler a variável chave, na qual será distinguido o caso da variável.
+
+Por causa de como os sistemas operacionais lidam com repetições de teclas, manter uma tecla pressionada pode causar várias chamadas para keyTyped() (e keyReleased() também). A taxa de repetição é definida pelo sistema operacional e como cada computador é configurado.
+
+Os navegadores podem ter diferentes comportamentos padrão anexados a vários eventos-chave. Para evitar qualquer comportamento padrão para este evento, adicione "return false" ao final da
+</div>
+
+<li>KeyReleased()</li>
+<div>A função keyReleased() é chamada uma vez toda vez que uma tecla é liberada. Consulte key e keyCode para obter mais informações.
+
+Os navegadores podem ter diferentes comportamentos padrão anexados a vários eventos-chave. Para evitar qualquer comportamento padrão para este evento, adicione "return false" ao final do método.</div>
+
 
 <h2> Grupo</h2>
 
