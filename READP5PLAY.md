@@ -156,7 +156,7 @@ Especifica o número de quadros a serem exibidos a cada segundo. Por exemplo, a 
 <ul>
 <li>resto de uma divisão => %</li>
 <li>divisão => /</li>
-<li>multiplicação => /</li>
+<li>multiplicação => *</li>
 <li>arrendondamento=> round</li>
 <li>aleatorio => random exemplo : random(1,60)</li>
 <li>numero aleatorio inteiro => exemplo: Math.round(random(1,6))</li>
