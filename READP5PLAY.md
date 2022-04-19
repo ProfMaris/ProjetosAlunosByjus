@@ -1,5 +1,5 @@
 # ***** P5.JS P5PLAY.JS ********
-Blackbox - Select. Copy. Paste & Search
+
 <h3> Projeto : Aulas Byjus</h3> 
 <h4> Prof. Maris Borges</h4>
 <h6> Versao 1.0.04.22 </h6>
