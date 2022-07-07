@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM</title>
+<link rel="stylesheet" href="estilo.css"/>
+<script src="meuscript.js"></script>
+</head>
+<body>
+<h1 id="id_h1" class="classe_h1">JOGOS</h1>
+<p id="corvinal" class="classe_p">BreakOut</p>
+<p id="grifinoria" class="classe_p">TREX</p>
+<p id="sonserina" class="classe_p">MultiCar</p>
+<h1 id="id_h1" class="classe_h1">Bibliotecas</h1>
+<p id="p5" class="classe_p">P5</p>
+<p id="P5" class="classe_p">P5 PLAY</p>
+<p id="matter   " class="matter">MultiCar</p>
+
+<p id="domjavascript" class="oculto">DOM - JAVASCRIPT</p>
+<p id="profMaris" class="oculto">ProfMaris</p>
+<button type="button" id="bdefinir" onclick="recuperarPs()">Recuperar </button>
+<button type="button" id="bdefinirC" onclick="definirCores()">Definir Cores </button>
+<button type="button" id="bdeAparecer" onclick="aparecer()">Aparecer </button>
+<button type="button" id="bdeDesAparecer" onclick="desaparecer()">Desaparecer </button>
+<button type="button" id="bdecor" onclick="botao()">Cor Botao </button>
+
+<p>Teste de Tabela</p>
+<div id="formulario" class="panel panel-primary">
+    <div class="panel-heading">Meus feitiços</div>
+        <div class="panel-body">
+             Feitiço: <input type="text"/>
+             Nível: <input type="text"/>
+            <span class="glyphicon glyphicon-plus" onclick="novoItem()"> Novo Item</span>
+        </div>
+    </div>
+ </div>
+ 
+
+ <div class="container col-md-3">
+        <div class="panel panel-default ">
+             <div class="panel-body">
+                <table class="table table-striped" id="tabela">
+                    <tr>
+                        <td>Feitiço</td><td>Nível</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
